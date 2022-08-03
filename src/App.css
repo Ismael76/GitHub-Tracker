@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+#username {
+  margin: 1rem;
+}
+
+.form {
+  padding: 5rem;
+}
+
+.form-container {
+  background-color: #61dafb;
+}
