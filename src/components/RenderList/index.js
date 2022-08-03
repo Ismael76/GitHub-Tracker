@@ -15,7 +15,9 @@ export default function RenderList({ repoData }) {
               <span></span>
               <div class="descriptions">
                 <h2>{repo.name}</h2>
-                {repo.description ? <p>{repo.description}</p> : null}
+                {repo.description ? (
+                  <p className="repoDesc">{repo.description}</p>
+                ) : null}
 
                 <p>Issues Count: {repo.open_issues_count}</p>
                 <p>Stargazes Count: {repo.stargazers_count}</p>

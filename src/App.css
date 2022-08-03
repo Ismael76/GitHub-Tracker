@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,200");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Orbitron&display=swap");
 
 .App {
   text-align: center;
@@ -79,7 +80,7 @@ body {
   flex-grow: 0;
   height: 440px;
   background: #050c20;
-  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   overflow: hidden;
@@ -124,10 +125,18 @@ body {
 
 .descriptions > p {
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 800;
+  background-color: yellow;
 }
 
-.descriptions button {
+.repoDesc {
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize !important;
+  background: none !important;
+  text-transform: none;
+}
+
+.descriptions .descriptions button {
   border-radius: 10px;
   padding: 0 2.5rem;
 }
@@ -166,6 +175,7 @@ body {
   outline: none;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
   transition: all 0.5s ease-in-out;
+  font-family: "Orbitron", sans-serif;
 }
 .card button:hover {
   transform: scale(0.95) translateX(-5px);
@@ -400,6 +410,7 @@ button[type="submit"] {
   overflow: hidden;
   margin-right: 50px;
 }
+
 button[type="submit"]:hover {
   background: #03e9f4;
   color: #050801;
