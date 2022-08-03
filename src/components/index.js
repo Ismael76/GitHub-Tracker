@@ -1,2 +1,2 @@
 export { default as SearchForm } from "./SearchForm";
-export { default as RepoContainer } from "./RepoContainer";
+export { default as RenderList } from "./RenderList";

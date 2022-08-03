@@ -1,26 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { SearchForm, RepoContainer } from "./components";
-import getRepos from "./actions";
+import { SearchForm } from "./components";
 
 function App() {
-  let data;
-
-  async function getRepoData() {
-    data = await getRepos("ismael76");
-    console.log(data);
-    return data;
-  }
-
-  getRepoData();
-
-  // console.log(data);
-
   return (
     <div className="App">
       <SearchForm />
-
-      <RepoContainer />
     </div>
   );
 }
