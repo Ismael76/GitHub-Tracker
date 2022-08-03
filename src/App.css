@@ -47,6 +47,10 @@
   border-radius: 10px;
 }
 
+body {
+  background-color: #050c20;
+}
+
 .form {
   display: flex;
   align-items: center;
@@ -55,8 +59,7 @@
 
 .form-container {
   background-color: #050c20;
-  height: 100vh;
-  overflow: scroll;
+  overflow: visible;
 }
 
 .repoList {
@@ -69,11 +72,8 @@
 
 /* RenderList CSS */
 
-div {
-  border-radius: 15px;
-}
-
 .card {
+  border-radius: 15px;
   flex: 1;
   flex-basis: 300px;
   flex-grow: 0;
@@ -109,6 +109,8 @@ div {
   padding: 20px;
   box-sizing: border-box;
   clip-path: circle(0% at 100% 100%);
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .descriptions * {
@@ -492,6 +494,7 @@ button[type="submit"] span:nth-child(4) {
 /* Glow Form */
 
 #apple,
+#github,
 #errorMsg {
   font-size: 3rem;
   color: #fff;
@@ -515,4 +518,18 @@ button[type="submit"] span:nth-child(4) {
 #errorMsg {
   margin-top: 15rem;
   text-transform: uppercase;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.3);
+
+  box-shadow: 10px 2px 15px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerContainer {
+  display: flex;
 }
