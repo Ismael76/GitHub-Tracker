@@ -3,7 +3,7 @@ import { RenderList } from "../../components";
 import axios from "axios";
 
 export default function SearchForm() {
-  const [userData, setUserData] = useState({ username: "", data: null });
+  const [userData, setUserData] = useState({ username: "", data: [] });
 
   const submitName = async (e) => {
     e.preventDefault();
@@ -22,12 +22,18 @@ export default function SearchForm() {
 
   return (
     <div className="form-container">
-      <form className="form" onSubmit={submitName}>
-        <label htmlFor="username">Username</label>
+      <form className="form" onSubmit={submitName} id="apple">
+        <label htmlFor="username">USERNAME</label>
         <input id="username" type="text"></input>
-        <input type="submit"></input>
+        <button type="submit">
+          Submit
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </form>
-      <RenderList repoData={userData.data} />
+      <RenderList repoData={userData} />
     </div>
   );
 }
