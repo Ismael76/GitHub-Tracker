@@ -12,6 +12,7 @@ export default function SearchForm() {
       const response = await axios.get(
         `https://api.github.com/users/${username}/repos`
       );
+
       setUserData((previous) => {
         return { username: username, data: response.data };
       });
