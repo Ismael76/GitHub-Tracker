@@ -54,6 +54,7 @@ body {
 
 .form {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -85,7 +86,8 @@ body {
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   overflow: hidden;
   position: relative;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   background: url(https://github.blog/wp-content/uploads/2020/12/layers-loop.h264.2020-12-21-11_16_56.gif?resize=640%2C409);
   background-position: center;
 }
@@ -136,7 +138,7 @@ body {
   text-transform: none;
 }
 
-.descriptions .descriptions button {
+.descriptions, .descriptions > button {
   border-radius: 10px;
   padding: 0 2.5rem;
 }
@@ -278,13 +280,13 @@ footer a {
 
 button[type="submit"] {
   background-color: #0005;
+  border-radius: 10px;
+  border-style: none;
 }
 
 /* Card Animation Spinner */
 
-.card,
-input[type="text"],
-button[type="submit"] {
+.card {
   position: relative;
   display: inline-block;
   padding: 25px 30px;
@@ -295,8 +297,22 @@ button[type="submit"] {
   transition: 0.5s;
   letter-spacing: 4px;
   overflow: hidden;
-  margin-right: 50px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
+
+button[type="submit"], input[type="text"] {
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+}
+
 .card:hover {
   background: #03e9f4;
   color: #050801;
@@ -403,14 +419,12 @@ button[type="submit"] {
   position: relative;
   display: inline-block;
   padding: 25px 30px;
-  margin: 40px 0;
   color: #03e9f4;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
   letter-spacing: 4px;
   overflow: hidden;
-  margin-right: 50px;
 }
 
 button[type="submit"]:hover {
@@ -511,12 +525,15 @@ button[type="submit"] span:nth-child(4) {
 #errorMsg {
   font-size: 3rem;
   color: #fff;
-
-  padding: 11px 19px;
-  margin: 0 40px;
   animation: animate 3s linear infinite;
   text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
     0 0 200px #0072ff;
+}
+
+#apple,
+#github {
+  padding: 11px 19px;
+  margin: 0 40px;
 }
 
 @keyframes animate {
@@ -529,7 +546,7 @@ button[type="submit"] span:nth-child(4) {
 }
 
 #errorMsg {
-  margin-top: 15rem;
+  margin-top: 6rem;
   text-transform: uppercase;
 }
 
@@ -545,4 +562,11 @@ footer {
 
 .footerContainer {
   display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }

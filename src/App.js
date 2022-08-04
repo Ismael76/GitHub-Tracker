@@ -8,11 +8,11 @@ function App() {
       <footer>
         <p>Created By Muhammed Ismael & Reece</p>
         <p className="footerContainer">
-          <a href="https://github.com/Ismael76">
+          <a target="_blank" href="https://github.com/Ismael76">
             <i class="fa fa-github-square github icons" id="github"></i>
             <p>Ismael</p>
           </a>
-          <a href="https://github.com/reececilon">
+          <a target="_blank" href="https://github.com/reececilon">
             <i class="fa fa-github-square github icons" id="github"></i>
             <p>Reece</p>
           </a>

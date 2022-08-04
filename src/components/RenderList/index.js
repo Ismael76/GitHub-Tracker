@@ -8,15 +8,16 @@ export default function RenderList({ repoData }) {
       <div className="repoList">
         {repoData.username ? (
           repoData.data.map((repo, index) => (
-            <div class="card">
+            <div class="card" loading="lazy">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
+              <h2>{repo.name}</h2>
               <div class="descriptions">
-                <h2>{repo.name}</h2>
+                {/* <h2>{repo.name}</h2> */}
                 {repo.description ? (
-                  <p className="repoDesc">{repo.description}</p>
+                  <p>{repo.description}</p>
                 ) : null}
 
                 <p>Issues Count: {repo.open_issues_count}</p>
