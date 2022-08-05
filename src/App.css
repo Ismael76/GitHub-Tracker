@@ -609,3 +609,8 @@ footer {
   color: white;
   background-color: #2b2eff;
 }
+
+.pagination .previousBtn,
+.nextBtn {
+  display: none;
+}
