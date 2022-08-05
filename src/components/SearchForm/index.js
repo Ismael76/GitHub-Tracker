@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { RenderList } from "../../components";
 import axios from "axios";
-import ReactPaginate from "react-paginate";
 
 export default function SearchForm() {
   const [userData, setUserData] = useState({ username: "", data: [] });
