@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <SearchForm />
-      <footer>
+      {/* <footer>
         <p>Created By Muhammed Ismael & Reece</p>
         <p className="footerContainer">
           <a target="_blank" href="https://github.com/Ismael76">
@@ -17,7 +17,7 @@ function App() {
             <p>Reece</p>
           </a>
         </p>
-      </footer>
+      </footer> */}
     </div>
   );
 }

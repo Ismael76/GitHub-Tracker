@@ -581,3 +581,31 @@ footer {
     margin-right: 10px;
   }
 }
+
+/* Pagination Button Styles */
+
+.pagination {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #2b2eff;
+  color: #2b2eff;
+}
+
+.pagination a:hover {
+  color: white;
+  background-color: #2b2eff;
+}
+
+.activeBtn a {
+  color: white;
+  background-color: #2b2eff;
+}
