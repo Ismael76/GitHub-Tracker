@@ -533,7 +533,8 @@ button[type="submit"] span:nth-child(4) {
 
 #apple,
 #github,
-#errorMsg {
+#errorMsg,
+.pagination {
   font-size: 3rem;
   color: #fff;
   animation: animate 3s linear infinite;
@@ -569,6 +570,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 150px;
 }
 
 .footerContainer {
@@ -585,14 +587,16 @@ footer {
 /* Pagination Button Styles */
 
 .pagination {
-  width: 80%;
-  height: 40px;
   list-style: none;
   display: flex;
+  padding: 0;
   justify-content: center;
+  margin-bottom: 200px;
+  width: 100%;
 }
 
 .pagination a {
+  font-size: 1rem;
   padding: 10px;
   margin: 8px;
   border-radius: 5px;
@@ -605,7 +609,7 @@ footer {
   background-color: #2b2eff;
 }
 
-.activeBtn a {
+.selected a {
   color: white;
   background-color: #2b2eff;
 }
